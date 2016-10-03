@@ -1,0 +1,11 @@
+.lock-wscript
+.svn/
+.hg/
+.git/
+CVS/
+.idea/
+.gitignore
+*~
+*.bak
+.DS_Store
+npm-debug.log
