@@ -9,9 +9,9 @@ module.exports = class EmberPrecompiler
 
   setup: (@config) ->
     @window = jsdom.jsdom().defaultView
-    @window.run fs.readFileSync @config.files.templates.paths.jquery, 'utf8'
-    @window.run fs.readFileSync @config.files.templates.paths.handlebars, 'utf8'
-    @window.run fs.readFileSync @config.files.templates.paths.ember, 'utf8'
+    @window.eval fs.readFileSync @config.files.templates.paths.jquery, 'utf8'
+    @window.eval fs.readFileSync @config.files.templates.paths.handlebars, 'utf8'
+    @window.eval fs.readFileSync @config.files.templates.paths.ember, 'utf8'
 
   constructor: (@config) ->
     if @config.files.templates?.paths?

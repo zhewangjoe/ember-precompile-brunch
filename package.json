@@ -1,6 +1,6 @@
 {
   "name": "ember-precompile-brunch",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Yet another Brunch plugin for Ember.js template precompiling",
   "main": "./lib/index",
   "scripts": {
